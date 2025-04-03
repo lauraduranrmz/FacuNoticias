@@ -1,23 +1,19 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-</head>
-<body>
-    
-    
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Inicio del Administrador') }}
-        </h2>
-    </x-slot>
+  <head> 
+    @include('admin.css')
+  </head>
+  <body>
+    @include('admin.header')
+    <div class="d-flex align-items-stretch">
+      <!-- Sidebar Navigation-->
 
- 
-</x-app-layout>
+      @include('admin.sidebar')
+     
+      <!-- Sidebar Navigation end-->
 
-
-</body>
+      @include('admin.body')
+       
+      @include('admin.footer')
+  </body>
 </html>
