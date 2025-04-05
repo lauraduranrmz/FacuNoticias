@@ -13,3 +13,7 @@ route::get('/',[HomeController::class, 'homepage'])->name('homepage');
 Route::middleware(['auth'])->group(function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
 });
+
+route::get('/post_page',[AdminController::class, 'post_page'])->name('post_page');
+
+route::post('/add_post',[AdminController::class, 'add_post']);

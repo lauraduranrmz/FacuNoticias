@@ -4,33 +4,62 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\Post;
+
 use App\Models\User;
 
 use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
 {
-    public function index()
+    public function post_page()
     {
-        if(Auth::id())
+        return view('admin.post_page');
+    }
+
+    public function add_post(Request $request)
+    {
+
+        $user=Auth()->user();
+
+        $userid = $user->id;
+
+        $name = $user->name;
+
+        $usertype = $user->usertype;
+
+
+        $post=new Post;
+
+        $post->title = $request->title;
+
+        $post->description = $request->description;
+
+        $post->post_status = 'active';
+
+        $post->user_id= $userid;
+
+        $post->name = $name;
+
+        $post->usertype= $usertype;
+
+
+        $image=$request->image;
+
+        if($image)
         {
-            $usertype = Auth()->user()->usertype;
+            $imagename=time().'.'.$image->getClientOriginalExtension();
 
-            if($usertype =='user')
-            {
-                return view('dashboard');
-            }
-
-           else if($usertype =='admin')
-            {
-                return view('admin.index');
-            }
-
-            else 
-            {
-                return redirect()->back();
-            }
+            $request->image->move('postimage', $imagename);
+    
+            $post->image = $imagename;
         }
+
+       
+
+        $post->save();
+
+        return redirect()-> back()->with('message', 'La noticia fue publicada correctamente');
 
     }
 }
