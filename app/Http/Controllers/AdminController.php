@@ -62,4 +62,11 @@ class AdminController extends Controller
         return redirect()-> back()->with('message', 'La noticia fue publicada correctamente');
 
     }
+
+    public function show_post()
+    {
+
+        $post = Post::all();
+        return view('admin.show_post', compact('post'));
+    }
 }
