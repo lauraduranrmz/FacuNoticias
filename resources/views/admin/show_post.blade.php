@@ -27,6 +27,7 @@
         .th_deg
         {
             background-color:#2DEB85;
+            color: black;
         }
 
         .img_deg
@@ -77,6 +78,8 @@
             <th>Imagen</th>
 
             <th>Eliminar</th>
+
+            <th>Editar</th>
         </tr>
         
         @foreach($post as $post)
@@ -93,6 +96,11 @@
 
         <td> 
             <a href="{{url('delete_post',$post->id)}}" class="btn btn-danger" onclick="confirmation(event)">Eliminar </a>
+        </td>
+
+        
+        <td> 
+            <a href="{{url('edit_page', $post->id)}}" class="btn btn-success">Editar</a>
         </td>
 
     </tr>
