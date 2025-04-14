@@ -25,3 +25,5 @@ route::get('/delete_post/{id}',[AdminController::class, 'delete_post']);
 route::get('/edit_page/{id}',[AdminController::class, 'edit_page']);
 
 route::post('/update_post/{id}',[AdminController::class, 'update_post']);
+
+route::get('/post_details/{id}',[HomeController::class, 'post_details']);
