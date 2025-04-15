@@ -27,3 +27,8 @@ route::get('/edit_page/{id}',[AdminController::class, 'edit_page']);
 route::post('/update_post/{id}',[AdminController::class, 'update_post']);
 
 route::get('/post_details/{id}',[HomeController::class, 'post_details']);
+
+route::get('/create_post',[HomeController::class, 'create_post'])->middleware('auth');
+
+route::post('/user_post',[HomeController::class, 'user_post'])->middleware('auth');
+

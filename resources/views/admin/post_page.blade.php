@@ -72,7 +72,7 @@
     </div>
 
     <div class="div_center">
-        <label>Agregar imágenes</label>
+        <label>Agregar imagen</label>
         <input type="file" name="image">
     </div>
 
