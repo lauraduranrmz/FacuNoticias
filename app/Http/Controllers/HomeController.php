@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Auth;
 
 use App\Models\Post;
 
+use Alert;
+
 class HomeController extends Controller
 {
     public function index()
@@ -101,6 +103,8 @@ class HomeController extends Controller
         }
 
         $post->save();
+
+        Alert::success('¡Felicidades!', 'Su noticia se ha publicado exitosamente');
 
         return redirect()->back();
     }
