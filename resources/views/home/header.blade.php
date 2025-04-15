@@ -35,7 +35,12 @@
 
                      <li><a href="blog.html">Blog</a></li>
 
+                     <li><a href="{{url('my_post')}}">Mis Noticias</a></li>
+
                      <li><a href="{{url('create_post')}}" >Publicar Noticia</a></li>
+
+                   
+
 
                      @if (Route::has('login'))
 

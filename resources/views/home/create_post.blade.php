@@ -15,7 +15,7 @@
             font-size: 30px;
             font-weight: bold;
             color:white;
-            padding: 35px;
+            padding: 30px;
         }
 
         label
