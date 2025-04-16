@@ -37,8 +37,21 @@
    </head>
    <body>
       <!-- header section start -->
+      @include('sweetalert::alert')
       <div class="header_section">
         @include('home.header')
+
+     <!--   @if(session()->has('message'))
+
+        <div class="alert alert-succes">
+
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
+
+        {{session()->get('message')}}
+
+    </div>
+
+        @endif-->
 
 </div>
 
@@ -48,6 +61,8 @@
     <img class="img_deg" src="/postimage/{{$data->image}}">
     <h4 class="title_deg">{{$data->title}}</h4>
     <p class="des_deg">{{$data->description}}</p>
+
+    <a onclick="return confirm('¿Estás seguro de eliminar esta noticia?')" href="{{url('my_post_del', $data->id)}}" class="btn btn-danger">Eliminar</a>
     @endforeach
          </div>
    

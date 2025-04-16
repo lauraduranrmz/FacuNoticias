@@ -118,4 +118,15 @@ class HomeController extends Controller
         $data = Post::where('user_id', '=', $userid)->get();
         return view('home.my_post', compact('data'));
     }
+
+    public function my_post_del($id)
+    {
+        $data = Post::find($id);
+
+        $data->delete();
+
+        Alert::success('OK', 'La noticia se ha eliminado correctamente');
+
+        return redirect()->back();
+    }
 }
