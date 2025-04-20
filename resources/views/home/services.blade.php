@@ -6,7 +6,7 @@
                <div class="row">
 
                @foreach($post as $post)
-                  <div class="col-md-4">
+                  <div class="col-md-4" style="padding:30px">
                      <div><img style="marginb-bottom: 20px; height: 200px" width="350px" src="/postimage/{{$post->image}}"></div>
                      <h4>{{$post->title}}</h4>
                      <p>Publicada por <b>{{$post->name}}</b></p>

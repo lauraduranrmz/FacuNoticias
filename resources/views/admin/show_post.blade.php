@@ -80,6 +80,10 @@
             <th>Eliminar</th>
 
             <th>Editar</th>
+
+            <th>Aceptar</th>
+
+            <th>Rechazar</th>
         </tr>
         
         @foreach($post as $post)
@@ -101,6 +105,14 @@
         
         <td> 
             <a href="{{url('edit_page', $post->id)}}" class="btn btn-success">Editar</a>
+        </td>
+
+        <td> 
+            <a onclick="return confirm('¿Está seguro de aceptar esta noticia?')" href="{{url('accept_post', $post->id)}}" class="btn btn-outline-secondary">Aceptar</a>
+        </td>
+
+        <td> 
+            <a onclick="return confirm('¿Está seguro de rechazar esta noticia?')" href="{{url('reject_post', $post->id)}}" class="btn btn-primary">Rechazar</a>
         </td>
 
     </tr>

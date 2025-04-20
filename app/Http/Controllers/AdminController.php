@@ -110,4 +110,26 @@ class AdminController extends Controller
 
         return redirect()->back()->with('message', 'La noticia fue actualizada correctamente');
     }
+
+    public function accept_post($id)
+    {
+        $data = Post::find($id);
+
+        $data->post_status='active';
+
+        $data->save();
+
+        return redirect()->back()->with('message', 'La noticia ha sido aceptada');
+    }
+
+    public function reject_post($id)
+    {
+        $data = Post::find($id);
+
+        $data->post_status='rejected';
+
+        $data->save();
+
+        return redirect()->back()->with('message', 'La noticia ha sido rechazada');
+    }
 }

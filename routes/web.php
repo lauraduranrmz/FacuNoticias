@@ -39,3 +39,7 @@ route::get('/my_post_del/{id}',[HomeController::class, 'my_post_del'])->middlewa
 route::get('/post_update_page/{id}',[HomeController::class, 'post_update_page'])->middleware('auth');
 
 route::post('/update_post_data/{id}',[HomeController::class, 'update_post_data'])->middleware('auth');
+
+route::get('/accept_post/{id}',[AdminController::class, 'accept_post']);
+
+route::get('/reject_post/{id}',[AdminController::class, 'reject_post']);
