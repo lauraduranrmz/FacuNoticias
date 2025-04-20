@@ -7,21 +7,8 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNav">
                      <ul class="navbar-nav">
-                        <li class="nav-item">
-                           <a class="nav-link" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link " href="blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link " href="contact.html">Contact</a>
-                        </li>
+                      
+   
                      </ul>
                   </div>
                </nav>
@@ -30,10 +17,7 @@
                <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
                <div class="menu_main">
                   <ul>
-                     <li class="active"><a href="index.html">Inicio</a></li>
-                     <li><a href="about.html">About</a></li>
-
-                     <li><a href="blog.html">Blog</a></li>
+                     <li class="active"><a href="{{url('/')}}">Inicio</a></li>
 
                      <li><a href="{{url('my_post')}}">Mis Noticias</a></li>
 
