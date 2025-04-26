@@ -102,6 +102,14 @@
                                 </x-dropdown-link>
                             @endif
 
+                                        @if (Auth::user()->usertype === 'admin')
+                            <x-responsive-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
+                            <p style="color:black!important;"> {{ __('Panel') }} 
+
+                                </p>
+                            </x-responsive-nav-link>
+                        @endif
+
                             <div class="border-t border-gray-200"></div>
 
                             <!-- Authentication -->
@@ -165,6 +173,8 @@
                         {{ __('API Tokens') }}
                     </x-responsive-nav-link>
                 @endif
+
+                
 
                 <!-- Authentication -->
                 <form method="POST" action="{{ route('logout') }}" x-data>

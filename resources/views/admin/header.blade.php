@@ -27,6 +27,7 @@
             <!-- Log out               -->
             <div class="list-inline-item logout">   
                 <x-app-layout>
+            
                 </x-app-layout>
              </div>
           </div>
