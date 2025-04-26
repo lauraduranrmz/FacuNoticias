@@ -187,7 +187,7 @@ pre {
 }
 
 .breadcrumb a {
-  color: #DB6574;
+  color: #00b52a;
   text-decoration: none !important;
 }
 
@@ -269,7 +269,7 @@ pre {
 }
 
 .dropdown-menu a:hover {
-  background: #DB6574;
+  background: #00b52a;
   color: #fff;
 }
 
@@ -344,7 +344,7 @@ i[class*='icon-'] {
 
 .megamenu ul a:hover {
   background: none;
-  color: #DB6574 !important;
+  color: #00b52a !important;
 }
 
 .megamenu .megamenu-buttons {
@@ -812,7 +812,7 @@ nav#sidebar li a:hover {
 }
 
 nav#sidebar li a:hover i {
-  color: #DB6574;
+  color: #00b52a;
 }
 
 nav#sidebar li a i {
@@ -834,7 +834,7 @@ nav#sidebar li li a:hover {
 }
 
 nav#sidebar li li a:hover i {
-  color: #DB6574;
+  color: #00b52a;
 }
 
 nav#sidebar li::before {
@@ -850,7 +850,7 @@ nav#sidebar li::before {
 }
 
 nav#sidebar li.active::before {
-  background: #DB6574;
+  background: #00b52a;
 }
 
 nav#sidebar li.active > a {
@@ -859,7 +859,7 @@ nav#sidebar li.active > a {
 }
 
 nav#sidebar li.active i {
-  color: #DB6574;
+  color: #00b52a;
 }
 
 nav#sidebar li li.active > a {
@@ -1644,7 +1644,7 @@ nav#sidebar.shrinked a[aria-expanded="true"]::after {
 .login-page .form-holder .form a.forgot-pass,
 .login-page .form-holder .form a.signup {
   font-size: 0.9rem;
-  color: #DB6574;
+  color: #00b52a;
 }
 
 .login-page .form-holder .form small {
@@ -1710,7 +1710,7 @@ nav#sidebar.shrinked a[aria-expanded="true"]::after {
 .form-control:focus {
   color: #979a9f;
   background-color: transparent;
-  border-color: #DB6574;
+  border-color: #00b52a;
   outline: none;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(219, 101, 116, 0.25);
   box-shadow: 0 0 0 0.2rem rgba(219, 101, 116, 0.25);
@@ -1766,7 +1766,7 @@ input[type='submit'] {
 }
 
 .custom-select:focus {
-  border-color: #DB6574;
+  border-color: #00b52a;
   outline: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -1835,7 +1835,7 @@ input[type='submit'] {
 }
 
 .input-group .dropdown-menu a:hover {
-  color: #DB6574;
+  color: #00b52a;
   background: none !important;
 }
 
@@ -1899,7 +1899,7 @@ form label {
 
 .checkbox-template:checked::before,
 .radio-template:checked::before {
-  background: #DB6574;
+  background: #00b52a;
 }
 
 .checkbox-template:checked::after,
@@ -1943,7 +1943,7 @@ input.input-material.is-invalid {
 }
 
 input.input-material:focus {
-  border-color: #DB6574;
+  border-color: #00b52a;
 }
 
 input.input-material ~ label {
@@ -1960,7 +1960,7 @@ input.input-material ~ label {
 input.input-material ~ label.active {
   font-size: 0.85rem;
   top: -10px;
-  color: #DB6574;
+  color: #00b52a;
 }
 
 input.input-material ~ label.is-invalid ~ label {
@@ -2826,7 +2826,7 @@ body {
 }
 
 a {
-  color: #DB6574;
+  color: #00b52a;
   text-decoration: none;
 }
 
@@ -3133,7 +3133,7 @@ a.bg-dark:focus, a.bg-dark:hover {
 }
 
 .text-primary {
-  color: #DB6574 !important;
+  color: #00b52a !important;
 }
 
 a.text-primary:focus, a.text-primary:hover {
