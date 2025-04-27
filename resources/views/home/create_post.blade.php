@@ -14,7 +14,7 @@
         {
             font-size: 30px;
             font-weight: bold;
-            color:white;
+            color:black;
             padding: 30px;
         }
 
@@ -22,7 +22,7 @@
         {
             display: inline-block;
             width: 200px;
-            color:white;
+            color:black;
             font-size: 18px;
             font-weight: bold;
         }
@@ -41,7 +41,8 @@
       <!-- header section start -->
       <div class="header_section">
         @include('home.header')
-       
+
+
 
          <div class="div_deg">
 

@@ -86,7 +86,10 @@
         </div>  
        
       </div>
-     
+      
+     <div>
       @include('home.footer')
+
+    </div>
    </body>
 </html>

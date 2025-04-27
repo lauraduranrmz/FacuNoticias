@@ -17,10 +17,7 @@
       <!-- services section start -->
       @include('home.services')
       <!-- services section end -->
-      <!-- about section start -->
-      @include('home.about')
-      <!-- about section end -->
-   
+     
      
       <!-- footer section start -->
       @include('home.footer')
