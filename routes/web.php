@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ChatbotController;
+use Illuminate\Http\Request;
 
 route::get('/',[HomeController::class, 'homepage'])->name('homepage');
 
@@ -43,3 +45,5 @@ route::post('/update_post_data/{id}',[HomeController::class, 'update_post_data']
 route::get('/accept_post/{id}',[AdminController::class, 'accept_post']);
 
 route::get('/reject_post/{id}',[AdminController::class, 'reject_post']);
+
+Route::post('/chatbot/ask', [ChatbotController::class, 'ask']);
