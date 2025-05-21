@@ -21,7 +21,7 @@
                      <div><img style="padding:20px" src="/postimage/{{$post->image}}" class="services_img"></div>
                      <h2><b>{{$post->title}}</b></h2>
 
-                     <h4>{{$post->description}}</h4>
+                     <h4>{!!$post->description!!}</h4>
                      <p>Publicada por <b>{{$post->name}}</b></p>
                  
                   </div>

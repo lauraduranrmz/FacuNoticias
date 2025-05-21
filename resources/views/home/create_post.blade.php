@@ -2,7 +2,11 @@
 <html lang="en">
    <head>
       <!-- basic -->
+       <meta charset="UTF-8">
 
+  <meta charset="UTF-8">
+
+  <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
       <style type="text/css">
 
         .div_deg
@@ -14,7 +18,7 @@
         {
             font-size: 30px;
             font-weight: bold;
-            color:black;
+            color:white;
             padding: 30px;
         }
 
@@ -22,7 +26,7 @@
         {
             display: inline-block;
             width: 200px;
-            color:black;
+            color:white;
             font-size: 18px;
             font-weight: bold;
         }
@@ -59,6 +63,14 @@
                 <label>Descripción</label>
                 <textarea name="description"></textarea>
             </div>
+
+             <script>
+    ClassicEditor
+      .create(document.querySelector('textarea[name="description"]'))
+      .catch(error => {
+        console.error(error);
+      });
+  </script>
 
             <div class="field_deg">
                 <label>Agregar imagen</label>

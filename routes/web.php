@@ -46,4 +46,5 @@ route::get('/accept_post/{id}',[AdminController::class, 'accept_post']);
 
 route::get('/reject_post/{id}',[AdminController::class, 'reject_post']);
 
-Route::post('/chatbot/ask', [ChatbotController::class, 'ask']);
+
+Route::post('/chatbot/ask', [ChatbotController::class, 'ask'])->name('chatbot.ask');
