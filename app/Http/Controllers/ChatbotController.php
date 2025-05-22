@@ -32,11 +32,11 @@ class ChatbotController extends Controller
                 'respuesta' => 'Debes iniciar sesión y luego dar clic en “Publicar noticia”. Completa el formulario y envíalo para revisión.'
             ],
             [
-                'preguntas' => ['como inicio sesión?', 'como inicio sesion', 'como puedo iniciar sesión','iniciar sesión'],
+                'preguntas' => ['como inicio sesión', 'como inicio sesion', 'como puedo iniciar sesión','iniciar sesión'],
                 'respuesta' => 'Haz clic en "Iniciar sesión" y llena tus datos previamente registrados.'
             ],
             [
-                'preguntas' => ['quien puede publicar noticias', 'quienes publican noticias', 'puedo publicar', 'puedo publicar una noticia', 'puedo publicar algo?', 'puedo publicar algo?', 'puedo publicar una noticia?'],
+                'preguntas' => ['quien puede publicar noticias', 'quienes publican noticias', 'puedo publicar', 'puedo publicar una noticia', 'puedo publicar algo', 'puedo publicar algo', 'puedo publicar una noticia'],
                 'respuesta' => 'Todos los estudiantes registrados pueden publicar noticias. Los administradores lo hacen sin revisión.'
             ],
             [
@@ -48,7 +48,7 @@ class ChatbotController extends Controller
                 'respuesta' => 'Ve a “Mis noticias” y ahi apareceran todas las noticias que haz publicado.'
             ],
             [
-                'preguntas' => ['editar noticia', 'como edito una noticia', 'modificar mi noticia', 'como modifico una noticia?', 'como modifico una noticia', 'como cambio una noticia?'],
+                'preguntas' => ['editar noticia', 'como edito una noticia', 'modificar mi noticia', 'como modifico una noticia?', 'como modifico una noticia', 'como cambio una noticia'],
                 'respuesta' => 'Ve a “Mis noticias”, selecciona la que quieras y haz clic en “Editar”.'
             ],
             [
@@ -56,12 +56,12 @@ class ChatbotController extends Controller
                 'respuesta' => 'En “Mis noticias”, haz clic en “Eliminar” y confirma la acción.'
             ],
             [
-                'preguntas' => ['como registrarme', 'quiero registrarme', 'crear cuenta', 'como creo una cuenta', 'como me registro?', 'como me registro'],
+                'preguntas' => ['como registrarme', 'quiero registrarme', 'crear cuenta', 'como creo una cuenta', 'como me registro', 'como me registro'],
                 'respuesta' => 'Haz clic en “Registrarse” y completa el formulario.'
             ],
             [
                 'preguntas' => ['olvide mi contraseña', 'no recuerdo mi contraseña'],
-                'respuesta' => 'Haz clic en “¿Olvidaste tu contraseña?” y sigue los pasos.'
+                'respuesta' => 'Haz clic en iniciar sesión y luego en la opción “¿Olvidaste tu contraseña?” y sigue los pasos.'
             ],
             [
                 'preguntas' => ['diferencia entre usuario y administrador', 'que hace un administrador', 'cual es la diferencia entre usuario y administrador?'],
@@ -72,15 +72,15 @@ class ChatbotController extends Controller
                 'respuesta' => 'Cada noticia muestra el nombre del autor.'
             ],
             [
-                'preguntas' => ['carreras que ofrece fime', 'que carreras hay en fime', 'que carreras tiene FIME?', 'que carreras tiene fime?', 'que carreras tiene fime'],
+                'preguntas' => ['carreras que ofrece fime', 'que carreras hay en fime', 'que carreras tiene FIME', 'que carreras tiene fime', 'que carreras tiene fime'],
                 'respuesta' => 'FIME ofrece Ingeniería en Software, Electrónica, Mecatrónica, y más.'
             ],
             [
-                'preguntas' => ['donde esta fime', 'ubicacion de fime', 'ubicacion de FIME', 'ubicacion de la FIME?', 'ubicacion de fime?', 'donde se ubica FIME?'],
+                'preguntas' => ['donde esta fime', 'ubicacion de fime', 'ubicacion de FIME', 'ubicacion de la FIME', 'ubicacion de fime', 'donde se ubica FIME'],
                 'respuesta' => 'Está en Ciudad Universitaria, San Nicolás de los Garza, Nuevo León.'
             ],
             [
-                'preguntas' => ['como entrar a siase', 'acceder a siase', 'como ingreso a siase?', 'como entro a siase?', 'como entro a siase'],
+                'preguntas' => ['como entrar a siase', 'acceder a siase', 'como ingreso a siase', 'como entro a siase?', 'como entro a siase'],
                 'respuesta' => 'Ingresa a https://www.uanl.mx/enlinea/ con tu matrícula y contraseña.'
             ],
             [
@@ -112,7 +112,7 @@ class ChatbotController extends Controller
                 'respuesta' => 'Nos vemos. ¡Vuelve pronto!'
             ],
             [
-                'preguntas' => ['contactar administradores', 'correo de contacto', 'como los puedo contactar', 'cual es su contacto', 'contactar', 'contactar?', 'como puedo contactar con ustedes'],
+                'preguntas' => ['contactar administradores', 'correo de contacto', 'como los puedo contactar', 'cual es su contacto', 'contactar', 'contactar', 'como puedo contactar con ustedes'],
                 'respuesta' => 'Puedes escribir a facunoticias5@gmail.com con tus dudas.'
             ]
         ];

@@ -35,7 +35,7 @@ class AdminController extends Controller
 
         $post->description = $request->description;
 
-        $post->post_status = 'active';
+        $post->post_status = 'activa';
 
         $post->user_id= $userid;
 
@@ -115,7 +115,7 @@ class AdminController extends Controller
     {
         $data = Post::find($id);
 
-        $data->post_status='active';
+        $data->post_status='activa';
 
         $data->save();
 
@@ -126,7 +126,7 @@ class AdminController extends Controller
     {
         $data = Post::find($id);
 
-        $data->post_status='rejected';
+        $data->post_status='rechazada';
 
         $data->save();
 

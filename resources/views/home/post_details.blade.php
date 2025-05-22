@@ -17,12 +17,12 @@
          <!-- banner section end -->
       </div>
       
-      <div class="col-md-5 mx-auto text-center">
+      <div class="col-md-5 mx-auto text-justify">
                      <div><img style="padding:20px" src="/postimage/{{$post->image}}" class="services_img"></div>
-                     <h2><b>{{$post->title}}</b></h2>
+                     <h1><b>{{$post->title}}</b></h1>
 
                      <h4>{!!$post->description!!}</h4>
-                     <p>Publicada por <b>{{$post->name}}</b></p>
+                     <h3>Publicada por <b>{{$post->name}}</b></h3>
                  
                   </div>
    

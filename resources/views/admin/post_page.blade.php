@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head> 
+       <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
     @include('admin.css')
     <style type="text/css">
 
@@ -70,6 +71,13 @@
         <label>Descripción</label>
         <textarea name="description"></textarea>
     </div>
+      <script>
+    ClassicEditor
+      .create(document.querySelector('textarea[name="description"]'))
+      .catch(error => {
+        console.error(error);
+      });
+  </script>
 
     <div class="div_center">
         <label>Agregar imagen</label>

@@ -20,7 +20,7 @@ class HomeController extends Controller
         if(Auth::id())
         {
 
-            $post=Post::where('post_status', '=', 'active')->get();
+            $post=Post::where('post_status', '=', 'activa')->get();
            
             $usertype=Auth()->user()->usertype;
 
@@ -50,7 +50,7 @@ class HomeController extends Controller
     public function homepage()
     {
 
-        $post = Post::where('post_status', '=', 'active')->get();
+        $post = Post::where('post_status', '=', 'activa')->get();
         return view('home.homepage', compact('post'));
     }
 
@@ -89,7 +89,7 @@ class HomeController extends Controller
 
         $post->usertype=  $usertype;
 
-        $post->post_status='pending';
+        $post->post_status='pendiente';
 
         $image = $request->image;
 

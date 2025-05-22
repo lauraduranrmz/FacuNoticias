@@ -153,6 +153,6 @@
             messagesDiv.innerHTML += `<div><strong>Bot:</strong> Hubo un error al enviar el mensaje.</div>`;
         }
     }
-</script> -->
+</script> 
    </body>
 </html>

@@ -22,12 +22,14 @@
             width: 80%;
             text-align: center;
             margin-left: 70px;
+
         }
 
         .th_deg
         {
             background-color:#2DEB85;
             color: black;
+            border-bottom: 1px solid white; 
         }
 
         .img_deg
@@ -37,7 +39,11 @@
             padding: 10px;
         }
 
-    </style>
+        .table_deg th,
+        .table_deg td {
+            border-bottom: 1px solid white; /* Bordes horizontales */
+        }
+        </style>
   </head>
   <body>
     @include('admin.header')
@@ -90,7 +96,7 @@
         <tr>
 
         <td>{{$post->title}}</td>
-        <td>{{$post->description}}</td>
+        <td>{!!$post->description!!}</td>
         <td>{{$post->name}}</td>
         <td>{{$post->post_status}}</td>
         <td>{{$post->usertype}}</td>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
+     <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
 
    <base href="/public">
       <!-- basic -->
@@ -62,8 +63,15 @@
 
             <div  class="input_deg">
                 <label>Descripción</label>
-                <textarea name="description">{{$data->description}}</textarea>
+                <textarea name="description">{!!$data->description!!}</textarea>
             </div>
+              <script>
+    ClassicEditor
+      .create(document.querySelector('textarea[name="description"]'))
+      .catch(error => {
+        console.error(error);
+      });
+  </script>
 
             <div class="input_deg">
                 <label >Imagen anterior</label>

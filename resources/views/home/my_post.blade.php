@@ -3,6 +3,7 @@
    <head>
       <!-- basic -->
      @include('home.homecss')
+     
 
      <style type="text/css">
 
