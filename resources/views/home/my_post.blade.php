@@ -62,7 +62,12 @@
     <img class="img_deg" src="/postimage/{{$data->image}}">
     <h4 class="title_deg">{{$data->title}}</h4>
     <p class="des_deg">{!!$data->description!!}</p>
-
+    
+      @if($data->post_status == 'rechazada')
+        <div class="alert alert-warning" style="width: 80%; margin: auto;">
+            Esta publicación ha sido <strong>rechazada</strong> por un administrador.
+        </div>
+    @endif
     <a onclick="return confirm('¿Estás seguro de eliminar esta noticia?')" href="{{url('my_post_del', $data->id)}}" class="btn btn-danger">Eliminar</a>
 
     <a href="{{url('post_update_page', $data->id)}}" class="btn btn-primary">Editar</a>

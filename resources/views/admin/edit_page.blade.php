@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head> 
+       <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
 
   <base href="/public">
     @include('admin.css')
@@ -68,8 +69,16 @@
 
     <div class="div_center">
         <label>Descripción</label>
-        <textarea name="description" >{{$post->description}}</textarea>
+        <textarea name="description" >{!!$post->description!!}</textarea>
     </div>
+
+            <script>
+    ClassicEditor
+      .create(document.querySelector('textarea[name="description"]'))
+      .catch(error => {
+        console.error(error);
+      });
+  </script>
 
 
     <div class="div_center">
