@@ -18,7 +18,7 @@
         {
             font-size: 30px;
             font-weight: bold;
-            color:white;
+            color:black;
             padding: 30px;
         }
 
@@ -26,7 +26,7 @@
         {
             display: inline-block;
             width: 200px;
-            color:white;
+            color:black;
             font-size: 18px;
             font-weight: bold;
         }
@@ -47,7 +47,7 @@
         @include('home.header')
 
 
-
+    </div>
          <div class="div_deg">
 
          <h3 class="title_deg">Crear Noticia</h3>
@@ -83,7 +83,7 @@
             </div>
             </form>
 
-         </div>
+     
   
       @include('home.footer')
    </body>
