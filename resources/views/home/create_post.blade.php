@@ -77,12 +77,12 @@
                 <input type="file" name="image">
             </div>
 
-
+ <div class="header_section">
             <div class="field_deg">
-                <input type="submit" value="Publicar" class="btn btn-outline-secondary" >
+                <input  type="submit" value="Publicar" class="btn btn-outline-secondary" >
             </div>
             </form>
-
+    </div>
      
   
       @include('home.footer')
